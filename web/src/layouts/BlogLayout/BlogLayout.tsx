@@ -14,7 +14,7 @@ const BlogLayout = ({ children }: BlogLayoutProps) => {
       <header>
         <div className="flex-between">
           <h1>
-            <Link to={routes.home()}>Redwood Blog</Link>
+            <Link to={routes.home()}>Robin's Redwood Test-Blog</Link>
           </h1>
           {isAuthenticated ? (
             <div>
