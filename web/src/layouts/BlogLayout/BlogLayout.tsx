@@ -36,15 +36,26 @@ const BlogLayout = ({ children }: BlogLayoutProps) => {
               <Link to={routes.about()}>About</Link>
             </li>
             <li>
-              <Link to={routes.posts()}>Posts</Link>
-            </li>
-            <li>
               <Link to={routes.contact()}>Contact</Link>
             </li>
           </ul>
         </nav>
       </header>
+
       <main>{children}</main>
+
+      <footer style={{ position: 'absolute', bottom: 0 }}>
+        <p>
+          Made with ♥️ by{' '}
+          <a
+            href="https://github.com/MenzelRobin"
+            style={{ color: 'inherit', textDecoration: 'none' }}
+          >
+            Robin
+          </a>{' '}
+          - v0.5
+        </p>
+      </footer>
     </>
   )
 }
